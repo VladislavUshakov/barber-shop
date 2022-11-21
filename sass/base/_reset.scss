@@ -1,7 +1,5 @@
 body {
-  color: getColor('primary-text');
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -18,8 +16,15 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }

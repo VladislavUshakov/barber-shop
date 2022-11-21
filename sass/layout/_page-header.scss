@@ -1,0 +1,19 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-header__container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  @include media-min(768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+.hero {
+}
+
+.hero__container {
+  padding: 0;
+}
+
+.hero__socials {
+  display: none;
+}
+
+.hero__content {
+  padding: 208px 31px;
+
+  background-image: url(../images/hero/hero-bg-mobile.jpg);
+  background-size: cover;
+  @include retina {
+    background-image: url(../images/hero/hero-bg-mobile@2x.jpg);
+  }
+}
+
+.hero__slogan {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  font-family: 'Raleway';
+  font-size: 48px;
+  line-height: calc(56 / 48);
+  letter-spacing: 0.05em;
+  color: var(--primary-light-text);
+
+  @include media-max(399px) {
+    font-size: 34px;
+  }
+}
+
+.hero__text {
+  max-width: 321px;
+
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
