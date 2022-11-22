@@ -1,5 +1,11 @@
 .logo {
+  display: flex;
+  height: 100%;
   color: var(--primary-light-text);
+
+  @include media-min(768px) {
+    color: var(--primary-dark-text);
+  }
 
   &__icon {
     fill: currentColor;

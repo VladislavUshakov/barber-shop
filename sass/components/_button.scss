@@ -19,6 +19,10 @@
     color: var(--primary-light-text);
     background-color: var(--primary-active);
   }
+
+  &--light {
+    color: var(--primary-light-text);
+  }
 }
 
 .button__text {

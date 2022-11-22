@@ -1,8 +1,3 @@
-.socials__link:hover,
-.socials__link:focus {
-  outline: transparent;
-}
-
 .socials--start-line {
   padding-left: 100px;
 }
@@ -19,6 +14,11 @@
     height: 1px;
     background-color: var(--primary-dark-text);
   }
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  outline: transparent;
 }
 
 .socials__label {

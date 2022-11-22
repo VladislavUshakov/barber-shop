@@ -1,0 +1,19 @@
+.contacts {
+  display: none;
+
+  @include media-min(768px) {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 8px;
+  }
+
+  @include media-min(1200px) {
+    flex-direction: row-reverse;
+    gap: 43px;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 123px;
+  }
+}
