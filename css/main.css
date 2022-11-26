@@ -63,6 +63,8 @@ a {
   --secondary-text: #9da4bd;
   --third-text: #555555;
   --primary-bg: #ffffff;
+  --prices-bg: #111319;
+  --contacts-bg: #191c26;
   --primary-active: #ff6c00;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -225,7 +227,7 @@ a {
   color: var(--primary-light-text);
   background-color: var(--primary-active);
 }
-.button--light {
+.button--light-text {
   color: var(--primary-light-text);
 }
 
@@ -718,6 +720,53 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .about__title {
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+}
+
+.prices {
+  min-height: 738px;
+  background-color: var(--prices-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/prices/prices-bg-mobile.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices/prices-bg-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices {
+    min-height: 856px;
+    background-image: url(../images/prices/prices-bg-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices/prices-bg-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices {
+    min-height: 692px;
+    background-image: url(../images/prices/prices-bg-desktop.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices/prices-bg-desktop@2x.png);
+  }
+}
+
+.prices__title {
+  font-size: 40px;
+  line-height: 1.175;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .prices__title {
     font-size: 42px;
     line-height: 1.1666666667;
   }
