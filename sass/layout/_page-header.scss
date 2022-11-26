@@ -16,6 +16,9 @@
   }
 
   @include media-min(768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: start;
     padding-top: 32px;
     padding-right: 0;
@@ -29,14 +32,6 @@
 .page-header__toggle {
   @include media-min(768px) {
     display: none;
-  }
-}
-
-.page-header__content {
-  @include media-min(768px) {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
   }
 }
 
