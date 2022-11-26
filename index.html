@@ -124,15 +124,104 @@
           </ul>
 
           <div class="hero__content">
-            <p class="hero__slogan">A hair salon for men in Kyiv</p>
-            <h1 class="hero__title">BarberShop</h1>
-            <p class="hero__text">
+            <p class="slogan slogan--transparent">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title title">BarberShop</h1>
+            <p class="hero__text text">
               We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
         </div>
       </section>
-      <section class="about"></section>
+      <section class="about">
+        <div class="about__container container">
+          <picture>
+            <source
+              srcset="
+                ./images/about/about-1-tablet.webp    1x,
+                ./images/about/about-1-tablet@2x.webp 2x
+              "
+              media="(max-width: 1199px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/about/about-1-tablet.jpg 1x, ./images/about/about-1-tablet@2x.jpg 2x"
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-1-desktop.webp    1x,
+                ./images/about/about-1-desktop@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/about/about-1-desktop.jpg    1x,
+                ./images/about/about-1-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="about__image"
+              src="./images/about/about-1-tablet.jpg"
+              alt="Men's shave"
+              sizes="(min-width: 1200px) 270px, 330px"
+            />
+          </picture>
+
+          <picture>
+            <source
+              srcset="
+                ./images/about/about-2-tablet.webp    1x,
+                ./images/about/about-2-tablet@2x.webp 2x
+              "
+              media="(max-width: 1199px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/about/about-2-tablet.jpg 1x, ./images/about/about-2-tablet@2x.jpg 2x"
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-2-desktop.webp    1x,
+                ./images/about/about-2-desktop@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/about/about-2-desktop.jpg    1x,
+                ./images/about/about-2-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              class="about__image"
+              src="./images/about/about-2-tablet.jpg"
+              alt="Men's shave"
+              sizes="(min-width: 1200px) 270px, 330px"
+            />
+          </picture>
+
+          <div class="about__wrap">
+            <p class="about__slogan slogan">About</p>
+            <h2 class="about__title title">Best Barbershop in your city</h2>
+            <p class="about__text text">
+              If you want to add more confidence to your image, you should definitely visit us.
+            </p>
+
+            <p class="about__text text--small">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="price"></section>
       <section class="qualities"></section>
       <section class="team"></section>

@@ -59,43 +59,8 @@
   }
 }
 
-.hero__slogan {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 63px;
-    height: 1px;
-    margin-right: 21px;
-    background: rgba(157, 164, 189, 0.6);
-  }
-
-  @include media-max(767px) {
-    letter-spacing: 0.1em;
-  }
-}
-
 .hero__title {
   margin-bottom: 20px;
-
-  font-family: 'Raleway';
-  font-size: 48px;
-  line-height: calc(56 / 48);
-  letter-spacing: 0.05em;
-  color: var(--primary-light-text);
-
-  @include media-max(399px) {
-    font-size: 34px;
-  }
 }
 
 .hero__text {
