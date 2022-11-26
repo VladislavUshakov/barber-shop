@@ -770,4 +770,11 @@ a {
     font-size: 42px;
     line-height: 1.1666666667;
   }
+}
+
+.prices__wrap {
+  margin-bottom: 44px;
+  padding: 30px 20px 30px 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }/*# sourceMappingURL=main.css.map */
