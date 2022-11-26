@@ -8,6 +8,7 @@
 
 .page-header__container {
   padding-top: 40px;
+  padding-bottom: 0;
   display: flex;
   align-items: center;
 
@@ -20,8 +21,14 @@
     flex-grow: 1;
     justify-content: space-between;
     align-items: start;
+
     padding-top: 32px;
     padding-right: 0;
+  }
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    max-width: 690px;
+    padding-left: 10px;
   }
 
   @include media-min(1200px) {

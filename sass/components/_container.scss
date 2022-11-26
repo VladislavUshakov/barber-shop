@@ -1,6 +1,5 @@
 .container {
-  padding-left: 31px;
-  padding-right: 31px;
+  padding: 84px 31px;
   margin: 0 auto;
 
   @include media-min(480px) {
@@ -8,14 +7,12 @@
   }
 
   @include media-min(768px) {
-    max-width: 720px;
-    padding-left: 39px;
-    padding-right: 39px;
+    max-width: 768px;
+    padding: 100px 39px;
   }
 
   @include media-min(1200px) {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 120px 15px;
   }
 }

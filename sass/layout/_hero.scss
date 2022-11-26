@@ -6,6 +6,10 @@
     display: flex;
     align-items: flex-end;
   }
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    max-width: 690px;
+  }
 }
 
 .hero__socials {
@@ -14,7 +18,7 @@
   @include media-min(768px) {
     position: absolute;
     bottom: 40px;
-    left: 80px;
+    left: 53px;
     display: flex;
     gap: 40px;
     transform-origin: left bottom;
@@ -61,20 +65,23 @@
 
 .hero__title {
   margin-bottom: 20px;
+  font-size: 48px;
+  line-height: calc(56 / 48);
+
+  @include media-max(399px) {
+    font-size: 34px;
+  }
+
+  @include media-min(1200px) {
+    font-size: 72px;
+    line-height: calc(85 / 72);
+  }
 }
 
 .hero__text {
   max-width: 321px;
 
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  letter-spacing: 0.02em;
-  color: var(--secondary-text);
-
   @include media-min(768px) {
     max-width: 360px;
-
-    font-size: 18px;
-    line-height: calc(30 / 18);
   }
 }
