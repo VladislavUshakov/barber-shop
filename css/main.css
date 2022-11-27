@@ -63,6 +63,7 @@ a {
   --secondary-text: #9da4bd;
   --third-text: #555555;
   --primary-bg: #ffffff;
+  --secondary-bg: #f7f7f7;
   --prices-bg: #111319;
   --contacts-bg: #191c26;
   --primary-active: #ff6c00;
@@ -158,6 +159,8 @@ a {
 .title {
   font-family: "Raleway";
   letter-spacing: 0.05em;
+  font-size: 42px;
+  line-height: 1.1666666667;
 }
 .title--light {
   color: var(--primary-light-text);
@@ -328,14 +331,23 @@ a {
   }
 }
 
-.socials--start-line {
+.sites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.sites--start-line {
   padding-left: 100px;
 }
 
-.socials__item--start-line {
+.sites__item--start-line {
   position: relative;
 }
-.socials__item--start-line::before {
+.sites__item--start-line::before {
   position: absolute;
   top: 50%;
   left: -100px;
@@ -346,12 +358,12 @@ a {
   background-color: var(--primary-dark-text);
 }
 
-.socials__link:hover,
-.socials__link:focus {
+.sites__link:hover,
+.sites__link:focus {
   outline: transparent;
 }
 
-.socials__label {
+.sites__label {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.3571428571;
@@ -360,8 +372,48 @@ a {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-.socials__link:hover .socials__label, .socials__link:focus .socials__label {
+.sites__link:hover .sites__label, .sites__link:focus .sites__label {
   color: var(--primary-active);
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-light-text);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socials__link {
+  color: var(--primary-dark-text);
+  -webkit-transition: color var(--animation);
+  transition: color var(--animation);
+}
+.socials__link:hover, .socials__link:focus {
+  color: var(--primary-active);
+  outline: transparent;
+}
+
+.socials__icon {
+  fill: currentColor;
 }
 
 .mobile-menu {
@@ -545,11 +597,11 @@ a {
   }
 }
 
-.hero__socials {
+.hero__sites {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .hero__socials {
+  .hero__sites {
     position: absolute;
     bottom: 40px;
     left: 53px;
@@ -564,7 +616,7 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__socials {
+  .hero__sites {
     left: 58px;
   }
 }
@@ -967,7 +1019,7 @@ a {
   padding: 20px 36px;
   width: calc((100% - 30px) / 2);
   height: 133px;
-  background-color: #f7f7f7;
+  background-color: var(--secondary-bg);
 }
 .qualities__item:nth-child(2n) {
   margin-top: 35px;
@@ -997,4 +1049,69 @@ a {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
+}
+
+.barbers {
+  background-color: var(--secondary-bg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers__container {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+}
+
+.barbers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .barbers__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.barbers__item {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .barbers__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.barbers__image {
+  margin-bottom: 30px;
+}
+
+.barbers__subtitle {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-text);
+}
+
+.barbers__label {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.02em;
+  color: var(--primary-active);
 }/*# sourceMappingURL=main.css.map */

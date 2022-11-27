@@ -60,7 +60,7 @@
   width: calc((100% - 30px) / 2);
   height: 133px;
 
-  background-color: #f7f7f7;
+  background-color: var(--secondary-bg);
 
   &:nth-child(2n) {
     margin-top: 35px;

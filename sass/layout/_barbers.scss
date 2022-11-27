@@ -1,0 +1,56 @@
+.barbers {
+  background-color: var(--secondary-bg);
+}
+
+.barbers__container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+}
+
+.barbers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @include media-min(1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.barbers__item {
+  text-align: center;
+
+  @include media-min(1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.barbers__image {
+  margin-bottom: 30px;
+}
+
+.barbers__subtitle {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-text);
+}
+
+.barbers__label {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-active);
+}

@@ -33,7 +33,7 @@
                 <a class="mobile-menu__link" href="#prices">Services and prices</a>
               </li>
               <li class="namobile-menu__item">
-                <a class="mobile-menu__link" href="#">Barbers</a>
+                <a class="mobile-menu__link" href="#barbers">Barbers</a>
               </li>
               <li class="namobile-menu__item">
                 <a class="mobile-menu__link" href="#">Contacts</a>
@@ -51,16 +51,16 @@
               </li>
             </ul>
 
-            <ul class="mobile-menu__list socials socials--start-line">
-              <li class="socials__item socials__item--start-line">
-                <a class="socials__link" href="#" class="hero__link"
-                  ><p class="socials__label">Instagram</p></a
-                >
+            <ul class="mobile-menu__list sites sites--start-line">
+              <li class="sites__item sites__item--start-line">
+                <a class="sites__link" href="#">
+                  <p class="sites__label">Instagram</p>
+                </a>
               </li>
-              <li class="socials__item">
-                <a class="socials__link" href="#" class="hero__link"
-                  ><p class="socials__label">Youtube</p></a
-                >
+              <li class="sites__item">
+                <a class="sites__link" href="#">
+                  <p class="sites__label">Youtube</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
               <a class="navigation__link page-header__link" href="#prices">Services and prices</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link page-header__link" href="#">Barbers</a>
+              <a class="navigation__link page-header__link" href="#barbers">Barbers</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link page-header__link" href="#">Contacts</a>
@@ -112,16 +112,16 @@
     <main>
       <section class="hero">
         <div class="hero__container container">
-          <ul class="hero__socials socials socials--start-line">
-            <li class="socials__item socials__item--start-line">
-              <a class="socials__link" href="#" class="hero__link"
-                ><p class="socials__label">Instagram</p></a
-              >
+          <ul class="hero__sites sites sites--start-line">
+            <li class="sites__item sites__item--start-line">
+              <a class="sites__link" href="#">
+                <p class="sites__label">Instagram</p>
+              </a>
             </li>
-            <li class="socials__item">
-              <a class="socials__link" href="#" class="hero__link"
-                ><p class="socials__label">Youtube</p></a
-              >
+            <li class="sites__item">
+              <a class="sites__link" href="#">
+                <p class="sites__label">Youtube</p>
+              </a>
             </li>
           </ul>
 
@@ -329,7 +329,257 @@
           </ul>
         </div>
       </section>
-      <section class="team"></section>
+      <section class="barbers" id="barbers">
+        <div class="barbers__container container">
+          <p class="barbers__slogan slogan">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers__title title title--dark">Our barbers</h2>
+          <ul class="barbers__list">
+            <li class="barbers__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-1-desktop.webp    1x,
+                    ./images/team/team-1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1-desktop.jpg    1x,
+                    ./images/team/team-1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1-tablet.webp    1x,
+                    ./images/team/team-1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-1-tablet.jpg 1x, ./images/team/team-1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-1-mobile.webp    1x,
+                    ./images/team/team-1-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-1-mobile.jpg 1x, ./images/team/team-1-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__image"
+                  src="./images/team/team-1-mobile.jpg"
+                  alt="Barber is cutting"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                />
+              </picture>
+              <h3 class="barbers__subtitle">John Smith</h3>
+              <p class="barbers__label">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-2-desktop.webp    1x,
+                    ./images/team/team-2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-desktop.jpg    1x,
+                    ./images/team/team-2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-tablet.webp    1x,
+                    ./images/team/team-2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-2-tablet.jpg 1x, ./images/team/team-2-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-mobile.webp    1x,
+                    ./images/team/team-2-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-2-mobile.jpg 1x, ./images/team/team-2-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__image"
+                  src="./images/team/team-2-mobile.jpg"
+                  alt="Barber is cutting"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                />
+              </picture>
+              <h3 class="barbers__subtitle">Michele Doe</h3>
+              <p class="barbers__label">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-3-desktop.webp    1x,
+                    ./images/team/team-3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-desktop.jpg    1x,
+                    ./images/team/team-3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-tablet.webp    1x,
+                    ./images/team/team-3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-3-tablet.jpg 1x, ./images/team/team-3-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-mobile.webp    1x,
+                    ./images/team/team-3-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team/team-3-mobile.jpg 1x, ./images/team/team-3-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="barbers__image"
+                  src="./images/team/team-3-mobile.jpg"
+                  alt="Barber is cutting"
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px"
+                />
+              </picture>
+              <h3 class="barbers__subtitle">Alan Black</h3>
+              <p class="barbers__label">Extreme Barbe</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="portfolio"></section>
       <section class="communication"></section>
     </main>
