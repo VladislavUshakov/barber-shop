@@ -1,0 +1,22 @@
+.portfolio__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include media-min(768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio__item {
+  max-width: 418px;
+
+  @include media-min(768px) {
+    max-width: calc((100% - 30px) / 2);
+  }
+
+  @include media-min(1200px) {
+    max-width: calc((100% - 90px) / 4);
+  }
+}

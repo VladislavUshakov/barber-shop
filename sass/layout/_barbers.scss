@@ -26,9 +26,10 @@
 
 .barbers__item {
   text-align: center;
+  max-width: 418px;
 
   @include media-min(1200px) {
-    width: calc((100% - 60px) / 3);
+    max-width: calc((100% - 60px) / 3);
   }
 }
 

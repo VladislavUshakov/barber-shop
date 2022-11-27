@@ -1088,10 +1088,11 @@ a {
 
 .barbers__item {
   text-align: center;
+  max-width: 418px;
 }
 @media screen and (min-width: 1200px) {
   .barbers__item {
-    width: calc((100% - 60px) / 3);
+    max-width: calc((100% - 60px) / 3);
   }
 }
 
@@ -1114,4 +1115,39 @@ a {
   line-height: 1.3571428571;
   letter-spacing: 0.02em;
   color: var(--primary-active);
+}
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.portfolio__item {
+  max-width: 418px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    max-width: calc((100% - 90px) / 4);
+  }
 }/*# sourceMappingURL=main.css.map */
