@@ -887,4 +887,114 @@ a {
   width: 1px;
   height: 1px;
   background-color: rgba(157, 164, 189, 0.12);
+}
+
+@media screen and (min-width: 1200px) {
+  .qualities__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 70px;
+  }
+}
+
+.qualities__data {
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .qualities__data {
+    max-width: 500px;
+  }
+}
+
+.qualities__title {
+  margin-bottom: 20px;
+  font-size: 41px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 768px) {
+  .qualities__title {
+    font-size: 42px;
+  }
+}
+
+.qualities__text {
+  font-size: 18px;
+  line-height: 1.6666666667;
+}
+
+.qualities__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .qualities__list {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .qualities__list {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .qualities__list {
+    max-width: 370px;
+  }
+}
+
+.qualities__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 20px 36px;
+  width: calc((100% - 30px) / 2);
+  height: 133px;
+  background-color: #f7f7f7;
+}
+.qualities__item:nth-child(2n) {
+  margin-top: 35px;
+}
+
+.qualities__number {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.05em;
+  color: var(--primary-dark-text);
+}
+.qualities__number span {
+  position: absolute;
+  top: 7px;
+  right: -13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--primary-active);
+}
+
+.qualities__label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
 }/*# sourceMappingURL=main.css.map */
