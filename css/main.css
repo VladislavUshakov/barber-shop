@@ -1160,6 +1160,11 @@ a {
   margin-bottom: 44px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .booking__title {
+    text-align: left;
+  }
+}
 
 .booking__form {
   display: -webkit-box;
@@ -1169,15 +1174,36 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 44px;
+}
+@media screen and (min-width: 768px) {
+  .booking__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking__form {
+    width: 570px;
+  }
 }
 
 .booking__field {
+  display: inline-block;
   position: relative;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .booking__field:not(:last-of-type) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .booking__label {
@@ -1233,6 +1259,11 @@ a {
 .booking__input:focus {
   outline: transparent;
   border-color: var(--primary-light-text);
+}
+
+.booling__wrap {
+  width: 100%;
+  text-align: center;
 }
 
 .booking__button {
