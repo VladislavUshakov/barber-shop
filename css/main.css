@@ -65,7 +65,7 @@ a {
   --primary-bg: #ffffff;
   --secondary-bg: #f7f7f7;
   --prices-bg: #111319;
-  --contacts-bg: #191c26;
+  --communication-bg: #191c26;
   --primary-active: #ff6c00;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1150,4 +1150,91 @@ a {
   .portfolio__item {
     max-width: calc((100% - 90px) / 4);
   }
+}
+
+.communication {
+  background-color: var(--communication-bg);
+}
+
+.booking__title {
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.booking__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 44px;
+}
+
+.booking__field {
+  position: relative;
+  width: 100%;
+}
+
+.booking__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: color var(--animation), -webkit-transform var(--animation);
+  transition: color var(--animation), -webkit-transform var(--animation);
+  transition: transform var(--animation), color var(--animation);
+  transition: transform var(--animation), color var(--animation), -webkit-transform var(--animation);
+}
+.booking__input:focus + .booking__label {
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+  color: var(--primary-light-text);
+}
+.booking__input:not(:-moz-placeholder-shown) + .booking__label {
+  transform: translateY(-23px);
+}
+.booking__input:not(:-ms-input-placeholder) + .booking__label {
+  transform: translateY(-23px);
+}
+.booking__input:not(:placeholder-shown) + .booking__label {
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+}
+
+.booking__input {
+  padding: 0;
+  width: 100%;
+  border: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  color: var(--primary-light-text);
+  background-color: transparent;
+  -webkit-transition: border-color var(--animation);
+  transition: border-color var(--animation);
+}
+.booking__input--textarea {
+  height: 75px;
+  resize: none;
+}
+.booking__input:focus {
+  outline: transparent;
+  border-color: var(--primary-light-text);
+}
+
+.booking__button {
+  width: 160px;
 }/*# sourceMappingURL=main.css.map */

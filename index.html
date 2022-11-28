@@ -812,20 +812,28 @@
         <div class="communication__container">
           <section class="booking">
             <div class="container">
+              <h2 class="booking__title title title--light">Online-booking</h2>
               <form class="booking__form" action="javascript:void(0);">
-                <p class="booking__title">Online-booking</p>
                 <label class="booking__field">
+                  <input class="booking__input" type="text" name="booking-name" placeholder=" " />
                   <p class="booking__label">Name*</p>
-                  <input class="booking__input" type="text" name="booking-name" />
                 </label>
                 <label class="booking__field">
+                  <input class="booking__input" type="tel" name="booking-tel" placeholder=" " />
                   <p class="booking__label">Phone*</p>
-                  <input class="booking__input" type="tel" name="booking-tel" />
                 </label>
                 <label class="booking__field">
+                  <textarea
+                    class="booking__input booking__input--textarea"
+                    name="booking-message"
+                    placeholder=" "
+                  ></textarea>
                   <p class="booking__label">Message</p>
-                  <textarea name="booking-message"></textarea>
                 </label>
+
+                <button class="booking__button button button--light-text" type="submit">
+                  Send
+                </button>
               </form>
             </div>
           </section>
