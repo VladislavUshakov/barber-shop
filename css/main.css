@@ -299,11 +299,11 @@ a {
   height: 100%;
 }
 
-.contacts {
+.connection {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .contacts {
+  .connection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -317,7 +317,7 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts {
+  .connection {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -1156,6 +1156,24 @@ a {
   background-color: var(--communication-bg);
 }
 
+@media screen and (min-width: 1200px) {
+  .communication__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking {
+    width: calc(50% + 15px);
+    max-width: 600px;
+  }
+}
+
 .booking__title {
   margin-bottom: 44px;
   text-align: center;
@@ -1261,11 +1279,138 @@ a {
   border-color: var(--primary-light-text);
 }
 
-.booling__wrap {
+.booking__wrap {
   width: 100%;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .booking__wrap {
+    text-align: left;
+  }
 }
 
 .booking__button {
   width: 160px;
+}
+
+.contacts {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/contacts/contacts-bg-mobile.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-bg-mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-bg-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-bg-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: calc(50% - 15px);
+    max-width: 570px;
+    background-image: url(../images/contacts/contacts-bg-desktop.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/contacts/contacts-bg-desktop@2x.png);
+  }
+}
+
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 44px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__data {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    text-align: left;
+  }
+}
+
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.contacts__icon {
+  fill: var(--secondary-text);
+}
+
+.contacts__text {
+  display: inline-block;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
+.contacts__text--bold {
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .contacts__text--bold {
+    width: 200px;
+  }
+}
+.contacts__text--underline {
+  text-decoration: underline;
+}
+
+.contacts__slogan {
+  color: var(--primary-light-text);
+}
+.contacts__slogan::before {
+  background-color: rgba(157, 164, 189, 0.4);
 }/*# sourceMappingURL=main.css.map */

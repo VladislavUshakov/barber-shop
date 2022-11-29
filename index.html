@@ -89,14 +89,14 @@
           </ul>
         </nav>
 
-        <ul class="contacts">
-          <li class="contacts__item">
+        <ul class="connection">
+          <li class="connection__item">
             <a class="button button--light-text" href="#"
               ><p class="button__text">Online-booking</p></a
             >
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link page-header__link" href="tel:+380441111111"
+          <li class="connection__item">
+            <a class="connection__link page-header__link" href="tel:+380441111111"
               >+38 044 111 11 11</a
             >
           </li>
@@ -831,7 +831,7 @@
                   <p class="booking__label">Message</p>
                 </label>
 
-                <div class="booling__wrap">
+                <div class="booking__wrap">
                   <button class="booking__button button button--light-text" type="submit">
                     Send
                   </button>
@@ -840,7 +840,46 @@
             </div>
           </section>
           <section class="contacts">
-            <div class="container"></div>
+            <div class="contacts__container container">
+              <h2 class="contacts__title title title--light">Contacts</h2>
+              <div class="contacts__wrap">
+                <address class="contacts__data">
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a href="#" class="contacts__link"
+                        ><svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-map"></use>
+                        </svg>
+                        <p class="contacts__text contacts__text--bold">
+                          st. Vasilkovaya, 7A Kiev, 08132
+                        </p>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a href="#" class="contacts__link">
+                        <svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <p class="contacts__text">+38 044 111 11 11</p>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a href="#" class="contacts__link">
+                        <svg class="contacts__icon" width="24" height="24">
+                          <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <p class="contacts__text contacts__text--underline">barbershop@email.com</p>
+                      </a>
+                    </li>
+                  </ul>
+                </address>
+
+                <div class="contacts__data">
+                  <p class="contacts__slogan slogan">Working hours</p>
+                  <p class="contacts__text">Every day from 9:00 to 22:00</p>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>

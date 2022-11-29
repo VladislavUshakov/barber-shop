@@ -1,3 +1,10 @@
+.booking {
+  @include media-min(1200px) {
+    width: calc(50% + 15px);
+    max-width: 600px;
+  }
+}
+
 .booking__title {
   margin-bottom: 44px;
   text-align: center;
@@ -86,9 +93,13 @@
   }
 }
 
-.booling__wrap {
+.booking__wrap {
   width: 100%;
   text-align: center;
+
+  @include media-min(768px) {
+    text-align: left;
+  }
 }
 
 .booking__button {
