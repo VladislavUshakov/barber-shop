@@ -18,12 +18,17 @@
 
   @include media-min(1200px) {
     width: calc(50% - 15px);
-    max-width: 570px;
-    background-image: url(../images/contacts/contacts-bg-desktop.png);
+    background-image: none;
+  }
+}
 
-    @include retina {
-      background-image: url(../images/contacts/contacts-bg-desktop@2x.png);
-    }
+.contacts__container {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    padding-right: 120px;
+  }
+
+  @include media-min(1200px) {
+    padding-left: 100px;
   }
 }
 
@@ -34,13 +39,17 @@
 
   @media screen and(min-width:768px) and (max-width: 1199px) {
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-between;
+  }
+
+  @include media-min(1200px) {
+    gap: 70px;
   }
 }
 
 .contacts__data {
   @include media-min(768px) {
-    width: calc((100% - 30px) / 2);
+    // width: calc((100% - 30px) / 2);
   }
 }
 
@@ -66,7 +75,18 @@
 }
 
 .contacts__icon {
-  fill: var(--secondary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: var(--secondary-text);
+  fill: transparent;
+
+  @include media-min(768px) {
+    &--translate {
+      position: relative;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .contacts__text {

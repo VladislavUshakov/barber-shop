@@ -1155,6 +1155,14 @@ a {
 .communication {
   background-color: var(--communication-bg);
 }
+@media screen and (min-width: 1200px) {
+  .communication {
+    background-repeat: no-repeat;
+    background-size: calc(50% - 15px) 100%;
+    background-position: right;
+    background-image: url(../images/contacts/contacts-bg-desktop.png);
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .communication__container {
@@ -1163,14 +1171,18 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .booking {
     width: calc(50% + 15px);
-    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking__container {
+    padding-right: 30px;
   }
 }
 
@@ -1205,11 +1217,6 @@ a {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .booking__form {
-    width: 570px;
   }
 }
 
@@ -1317,13 +1324,18 @@ a {
 @media screen and (min-width: 1200px) {
   .contacts {
     width: calc(50% - 15px);
-    max-width: 570px;
-    background-image: url(../images/contacts/contacts-bg-desktop.png);
+    background-image: none;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: url(../images/contacts/contacts-bg-desktop@2x.png);
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__container {
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    padding-left: 100px;
   }
 }
 
@@ -1343,13 +1355,14 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .contacts__data {
-    width: calc((100% - 30px) / 2);
+@media screen and (min-width: 1200px) {
+  .contacts__wrap {
+    gap: 70px;
   }
 }
 
@@ -1385,7 +1398,24 @@ a {
 }
 
 .contacts__icon {
-  fill: var(--secondary-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  stroke: var(--secondary-text);
+  fill: transparent;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon--translate {
+    position: relative;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .contacts__text {

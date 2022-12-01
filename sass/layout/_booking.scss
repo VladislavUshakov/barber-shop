@@ -1,7 +1,12 @@
 .booking {
   @include media-min(1200px) {
     width: calc(50% + 15px);
-    max-width: 600px;
+  }
+}
+
+.booking__container {
+  @include media-min(1200px) {
+    padding-right: 30px;
   }
 }
 
@@ -23,10 +28,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 30px;
-  }
-
-  @include media-min(1200px) {
-    width: 570px;
   }
 }
 
