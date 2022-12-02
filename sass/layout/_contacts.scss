@@ -72,13 +72,21 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  color: var(--secondary-text);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    outline: transparent;
+    color: var(--primary-light-text);
+  }
 }
 
 .contacts__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: var(--secondary-text);
+  stroke: currentColor;
   fill: transparent;
 
   @include media-min(768px) {
@@ -95,7 +103,10 @@
   font-style: normal;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
-  color: var(--secondary-text);
+
+  &--color {
+    color: var(--secondary-text);
+  }
 
   &--bold {
     font-weight: 700;

@@ -339,6 +339,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
 }
 .sites--start-line {
   padding-left: 100px;
@@ -364,10 +368,6 @@ a {
 }
 
 .sites__label {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.3571428571;
-  letter-spacing: 0.2em;
   color: var(--primary-dark-text);
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
@@ -1395,6 +1395,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 16px;
+  color: var(--secondary-text);
+  -webkit-transition: color var(--animation);
+  transition: color var(--animation);
+}
+.contacts__link:hover, .contacts__link:focus {
+  outline: transparent;
+  color: var(--primary-light-text);
 }
 
 .contacts__icon {
@@ -1407,7 +1414,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  stroke: var(--secondary-text);
+  stroke: currentColor;
   fill: transparent;
 }
 @media screen and (min-width: 768px) {
@@ -1424,6 +1431,8 @@ a {
   font-style: normal;
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
+}
+.contacts__text--color {
   color: var(--secondary-text);
 }
 .contacts__text--bold {
@@ -1443,4 +1452,41 @@ a {
 }
 .contacts__slogan::before {
   background-color: rgba(157, 164, 189, 0.4);
+}
+
+.page-footer__container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.page-footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: var(--secondary-text);
+}
+
+.page-footer__sites {
+  gap: 40px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 11px;
+  line-height: 1.3636363636;
 }/*# sourceMappingURL=main.css.map */
