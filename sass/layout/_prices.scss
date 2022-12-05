@@ -127,4 +127,16 @@
     height: 1px;
     background-color: rgba(157, 164, 189, 0.12);
   }
+
+  @include media-max(479px) {
+    text-align: left;
+    max-width: 50%;
+  }
+}
+
+.prices__cost {
+  @include media-max(479px) {
+    text-align: right;
+    max-width: 45%;
+  }
 }

@@ -54,9 +54,11 @@
 .qualities__item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
-  padding: 20px 36px;
+  padding: 20px 8px;
   width: calc((100% - 30px) / 2);
   height: 133px;
 
@@ -89,9 +91,15 @@
     line-height: calc(22 / 16);
     color: var(--primary-active);
   }
+
+  @include media-max(360px) {
+    font-size: 32px;
+  }
 }
 
 .qualities__label {
+  max-width: 120px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
