@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+
+  @include media-min(768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .page-footer__text {
@@ -16,12 +23,6 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: var(--secondary-text);
-
-  //   & span {
-  //     display: inline-block;
-  //     width: 12px;
-  //     height: 12px;
-  //   }
 }
 
 .page-footer__sites {
